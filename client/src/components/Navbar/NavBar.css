@@ -1,0 +1,27 @@
+.logo{
+   position: absolute;
+   top: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   right: 0;
+   width: 100%;
+}
+.logo img{
+   width: 100px;
+}
+.logo div a:nth-child(n+2){
+   margin-left: 30px;
+}
+.logo_beside{
+   font-style: normal;
+   font-weight: 600;
+   font-size: 26px;
+   line-height: 31px;
+   color: #EEEEF1;
+   margin: 0 ;
+}
+.logo_beside:hover{
+   cursor: pointer;
+   color: #1BB954;
+}
