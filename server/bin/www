@@ -7,12 +7,13 @@
 const app = require("../app");
 const debug = require("debug")("quizz:server");
 const http = require("http");
+const { PORT } = require("../config/env");
 
 /**
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(PORT || "3000");
 app.set("port", port);
 
 /**

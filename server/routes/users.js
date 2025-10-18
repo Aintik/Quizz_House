@@ -15,7 +15,7 @@ const {
   addingCertif,
   giveCertif,
 } = require("../controllers/users.controller");
-const tokening = require("../MiddleWare/signIn");
+const {authenticate} = require("../middleware/auth")
 
 /* GET All users */
 router.get("/", all);
@@ -24,17 +24,17 @@ router.get("/", all);
 router.post("/", create);
 
 //Delete user by token Id
-router.delete("/", tokening, del);
+router.delete("/", authenticate, del);
 
 //Update user by Id
-router.put("/", tokening, update);
-router.put("/addingCertif", tokening, addingCertif);
+router.put("/", authenticate, update);
+router.put("/addingCertif", authenticate, addingCertif);
 
 //Giving certificate
-router.post("/giveCertif", tokening, giveCertif);
+router.post("/giveCertif", authenticate, giveCertif);
 
 //Show one user by Id
-router.get("/one", tokening, show);
+router.get("/one", authenticate, show);
 
 // Sign in
 router.post("/signin", signIn);

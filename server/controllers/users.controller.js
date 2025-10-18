@@ -1,5 +1,5 @@
 const Users = require("../model/User");
-const jwt = require("jsonwebtoken");
+const { generateToken } = require("../config/jwt.js");
 const bcrypt = require("bcrypt");
 const path = require("path");
 const fs = require("fs");
@@ -19,7 +19,7 @@ const create = async (req, res, next) => {
   else {
     await bcrypt.hash(
       req.body.password,
-      +process.env.saltRounds,
+      10,
       function (err, hash) {
         if (err) throw err;
         Users.create({ ...req.body, password: hash }).then((data) => {
@@ -45,7 +45,7 @@ const update = async (req, res, next) => {
     console.log(user.password);
     const result = await bcrypt.compare(req.body.checkPassword, user.password);
     if (result) {
-      hash = await bcrypt.hash(req.body.password, +process.env.saltRounds);
+      hash = await bcrypt.hash(req.body.password, 10);
     } else pasChanged = false;
   }
   const data = await Users.findByIdAndUpdate(req.user.id, {
@@ -65,7 +65,7 @@ const signIn = async (req, res, next) => {
     const result = await bcrypt.compare(password, data.password);
     if (result) {
       mes = "U r logged";
-      token = jwt.sign({ id: data.id }, process.env.tokenKey);
+      token = generateToken({ id: data.id });
     } else mes = "Password is wrong";
   } else mes = "User wasn't found";
 

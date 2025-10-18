@@ -1,21 +1,15 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
-const mongoose = require("mongoose");
+const connectDB = require("./config/db.js");
+const { config } = require("./config/env.js");
+const { applyCors } = require("./config/cors.js");
+
 const cors = require("cors");
 require("dotenv").config();
 
-mongoose.connect(process.env.MONGOroute).then((data) => {
-  if (!data) console.error("error with mongoose connection");
-  else console.log("Mongoose connected");
-});
-
-const indexRouter = require("./routes/index");
-const usersRouter = require("./routes/users");
-const adminsRouter = require("./routes/admins");
-const testsRouter = require("./routes/tests");
-
 const app = express();
+applyCors(app);
 
 app.use(logger("dev"));
 app.use(express.json());
@@ -23,11 +17,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
 
-const tokening = require("./MiddleWare/signIn");
+// Connect to DB
+connectDB();
 
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
-app.use("/admins", adminsRouter);
+const testsRouter = require("./routes/tests");
+
+const tokening = require("./middleware/auth.js");
+
+app.use("/", require("./routes/index"));
+app.use("/users", require("./routes/users"));
+app.use("/admins", require("./routes/admins"));
 // app.use("/tests", tokening, testsRouter);
 app.use("/tests", testsRouter);
 
