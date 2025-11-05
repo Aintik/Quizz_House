@@ -1,0 +1,19 @@
+@import url("./components/Font/stylesheet.css");
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Harmonia Sans Pro Cyr';
+   list-style: none;
+   text-decoration: none;
+   object-fit:cover;
+   user-select: none;
+   -webkit-user-select: none;
+}
+.Index{
+   width: 100%;
+   min-height: 100vh;
+   background-image: url("/Background.jpg");
+   background-position: top;
+   background-repeat: repeat;
+}

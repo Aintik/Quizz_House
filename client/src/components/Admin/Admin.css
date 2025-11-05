@@ -1,0 +1,141 @@
+.Admin div .logo img,.Upload div .logo img{
+   display: none;
+}
+.Admin>div{
+   width:570px ;
+}
+.Admin .status{
+   width: 570px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.Admin .status .text{
+   width: 45%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.Admin .status .text p{
+   font-style: normal;
+   font-weight: 600;
+   font-size: 26px;
+   color: #FFFFFF;
+   margin: auto 0;
+}
+.Admin .status .filter{
+   width: 50%;
+   background: linear-gradient(161.16deg, rgba(255, 255, 255, 0.2) , rgba(255, 255, 255, 0) 100%);
+   box-shadow: 1px 4px 5px 2px rgba(0, 0, 0, 0.25);
+   backdrop-filter: blur(80px);
+   height: 21px;
+   border-radius:10px;
+   border:1px solid rgba(255, 255, 255, 0.4) ;
+   position: relative;
+}
+.Admin .status .filter div{
+   position: absolute;
+   /*width: 0%;*/
+   height: 100%;
+   background-color: #1BB954;
+   border-radius: 10px;
+}
+.Admin div .logo ,.Upload div .logo{
+   justify-content:flex-end;
+}
+.Admin .gb{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   margin-bottom: 30px;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+.Admin .buttona{
+   width: 48%;
+   background: linear-gradient(161.16deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+   box-shadow: 1px 4px 5px 2px rgba(0, 0, 0, 0.25);
+   backdrop-filter: blur(80px);
+   border-radius: 10px;
+   padding: 18px 19px;
+   border:1px solid rgba(14, 10, 10, 0.5);
+   color: #fff;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 26px;
+   line-height: 31px;
+   display: flex;
+   justify-content: space-between;
+}
+.Admin .buttona:hover{
+   cursor: pointer;
+   background: linear-gradient(141.29deg, rgba(27, 185, 84, 0.5) 0%, rgba(27, 185, 84, 0) 79.24%);
+}
+.Admin>h2{
+   margin-top: 90px;
+}
+.Admin h2{
+   width:570px ;
+   text-align: start;
+}
+.Admin .sinf:nth-child(n+3){
+   margin-top: 100px;
+}
+.Admin .sinf{
+   width: 570px;
+   display: flex;
+   justify-content: space-between;
+}
+.Admin .sinf>h2{
+   width: auto;
+}
+.Admin .glass{
+   padding: 50px 50px 10px 50px;
+}
+.Admin .sinf.edit{
+   margin-top: 50px;
+}
+.Admin .glass.edit{
+   margin-bottom: 20px;
+}
+.Admin .glass.edit .sub{
+   color: white;
+}
+.Upload .glass{
+   width: 570px;
+}
+.Admin .glass h4{
+   font-size:15px;
+   line-height:15px;
+   margin-bottom: 5px;
+}
+.Admin .glass label{
+   font-size:14px;
+   text-align: start;
+   padding: 0;
+   margin-bottom: 2px;
+}
+.Admin .glass label input,.Admin .glass label .rad{
+   display: none;
+}
+.Admin .glass .close button{
+   font-size:20px
+}
+.Admin .glass table {
+   width: 100%;
+}
+.Admin .glass table thead tr{
+   margin-bottom: 20px;
+}
+.Admin .glass table tr{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid;
+   color: #fff;
+   width: 100%;
+   margin-bottom: 10px;
+   padding: 0 30px;
+}
