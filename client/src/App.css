@@ -8,7 +8,7 @@
    display: flex;
    align-items: center;
    position: relative;
-   padding: 100px 0;
+   padding: 150px 0;
    flex-direction:column;
 }
 .glass{
@@ -272,4 +272,25 @@ input[type="radio"]:checked ~ .rad{
    font-size: 26px;
    line-height: 31px;
    color: white;
+}
+
+
+@media (max-width: 600px) {
+  .auth{
+    width: 100%;
+  }
+  .glass{
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  .df {
+    width: auto;
+    flex-direction: column;
+  }
+  .position{
+    width: auto;
+  }
+  .button{
+    margin-bottom: 10px;
+  }
 }

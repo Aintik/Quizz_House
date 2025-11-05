@@ -28,8 +28,8 @@ const Finish = () => {
             <form action="">
                <h4>Test yakunlandi</h4>
                <h2 style={styles.align}>{state}%</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsam laboriosam obcaecati consequuntur, architecto cumque repudiandae modi provident at deleniti officiis quas mollitia, commodi saepe, hic minus tempora magnam a.</p>
-               <p style={styles.buttonf}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsam laboriosam obcaecati consequuntur, architecto cumque repudiandae modi provident at deleniti officiis quas mollitia, commodi saepe, hic minus tempora magnam a.</p>
+               <p>Lorem ipsum dolor aminus tempora magnam a.</p>
+               <p style={styles.buttonf}>Lorem ipsum doloequuntur, architecto chic minus tempora magnam a.</p>
                <a className="button" href="/home">Sertifikatni olish</a>
             </form>
          </div>

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d48fd8ac.chunk.css",
+    "main.js": "/static/js/main.f4abd2e9.chunk.js",
+    "main.js.map": "/static/js/main.f4abd2e9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.81534a39.js",
+    "runtime-main.js.map": "/static/js/runtime-main.81534a39.js.map",
+    "static/js/2.090a4fde.chunk.js": "/static/js/2.090a4fde.chunk.js",
+    "static/js/2.090a4fde.chunk.js.map": "/static/js/2.090a4fde.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5b017ea1228c5799e44cdf9817de4569.js": "/precache-manifest.5b017ea1228c5799e44cdf9817de4569.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d48fd8ac.chunk.css.map": "/static/css/main.d48fd8ac.chunk.css.map",
+    "static/js/2.090a4fde.chunk.js.LICENSE.txt": "/static/js/2.090a4fde.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/HarmoniaSansProCyr-SemiBdIt.b88b6f82.woff2",
+    "static/media/ithouse.svg": "/static/media/ithouse.42a8364f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81534a39.js",
+    "static/js/2.090a4fde.chunk.js",
+    "static/css/main.d48fd8ac.chunk.css",
+    "static/js/main.f4abd2e9.chunk.js"
+  ]
+}
